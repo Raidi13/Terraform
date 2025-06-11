@@ -1,0 +1,22 @@
+paremeters:
+  InstanceType:
+    Type:
+    Description: Choose the InstanceType you want
+    Default: t2.micro
+    Allowedvalues:
+      - t2.micro
+      - t3.micro
+      - t3.small
+  AvalibalityZone:
+    Type:
+    Description: Enter the AZ where to launch this InstanceType
+    Default: us-east-1b
+
+Resources:
+  EC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      AvalibalityZone: !Ref AvalibalityZone
+      ImageId: AMI-1234567890
+      KeyName:
+      InstanceType: !Ref InstanceType
