@@ -16,7 +16,8 @@ Resources:
   EC2Instance:
     Type: AWS::EC2::Instance
     Properties:
-      AvalibalityZone: !Ref AvalibalityZone
+      AvalibalityZone: !RefAvalibalityZone
       ImageId: AMI-1234567890
       KeyName:
-      InstanceType: !Ref InstanceType
+      InstanceType: !RefInstanceType
+
