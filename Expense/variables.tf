@@ -12,9 +12,9 @@
 }
 
  variable "zone_id"{
-   default = "Z04935171C92BHM9K7BG3" # hosted zone id
+   default = "Z02637673132XKMIIEO7B" # hosted zone id
 }
 
  variable "domain_name" {
-   default = "aws-dev-rk.online"
+   default = "karthikraidi.online"
 }
