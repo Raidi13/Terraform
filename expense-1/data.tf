@@ -1,6 +1,6 @@
 data "aws_ami" "ami_info" {
   most_recent = true
-  owners      = ["973714476881"]
+  owners      = ["019292670225"]
 
   filter {
     name   = "name"
@@ -16,4 +16,3 @@ data "aws_ami" "ami_info" {
     values = ["hvm"]
   }
 }
-
